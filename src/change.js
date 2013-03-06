@@ -47,7 +47,6 @@ angular.module('mobile-navigate').factory('$change', ['$q', '$rootScope', functi
       reverse && REVERSE_CLASS || ''
     ]);
     next.addClass(nextClasses);
-    console.log('nextClasses',nextClasses);
 
     var prevClasses;
     if (prev) {
@@ -57,7 +56,6 @@ angular.module('mobile-navigate').factory('$change', ['$q', '$rootScope', functi
        reverse && REVERSE_CLASS || ''
       ]);
       prev.addClass(prevClasses);
-      console.log('prevClasses',prevClasses);
     }
 
     next.css('z-index', '');
